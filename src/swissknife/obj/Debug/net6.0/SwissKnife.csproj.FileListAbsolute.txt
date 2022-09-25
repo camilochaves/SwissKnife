@@ -1,0 +1,12 @@
+C:\Users\chave\dev\SwissKnife\src\swissknife\bin\Debug\net6.0\SwissKnife.deps.json
+C:\Users\chave\dev\SwissKnife\src\swissknife\bin\Debug\net6.0\SwissKnife.dll
+C:\Users\chave\dev\SwissKnife\src\swissknife\bin\Debug\net6.0\SwissKnife.pdb
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\SwissKnife.csproj.AssemblyReference.cache
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\SwissKnife.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\SwissKnife.AssemblyInfoInputs.cache
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\SwissKnife.AssemblyInfo.cs
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\SwissKnife.csproj.CoreCompileInputs.cache
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\SwissKnife.dll
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\refint\SwissKnife.dll
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\SwissKnife.pdb
+C:\Users\chave\dev\SwissKnife\src\swissknife\obj\Debug\net6.0\ref\SwissKnife.dll
