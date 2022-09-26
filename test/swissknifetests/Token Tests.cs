@@ -40,9 +40,10 @@ public partial class TestSwissKnife
         //Create ID Token
         var secretLongPassword = "SithRulez_PasswordMustBeLong";
         var issuer = "The Empire";
-        var token = TokenTools.CreateIdToken(id, secretLongPassword, issuer, 1);
-        var tokenIdIsValid = TokenTools.ValidateIdToken(token, secretLongPassword, issuer);
-        var whois = TokenTools.ExtractPrincipalFromIdToken(token, secretLongPassword, issuer);
+        var audience = "Sith apprentices";
+        var token = TokenTools.CreateIdToken(id, secretLongPassword, issuer, audience);
+        var tokenIdIsValid = TokenTools.ValidateIdToken(token, secretLongPassword, issuer, audience);
+        var whois = TokenTools.ExtractPrincipalFromIdToken(token, secretLongPassword, issuer, audience);
         var user = whois.Identity.Name;
         Assert.IsTrue(user == identityOwner);
         Assert.IsTrue(whois.HasClaim("Email", ownerEmail));

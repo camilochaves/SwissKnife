@@ -12,6 +12,7 @@ namespace SwissKnife
             ClaimsIdentity user,
             string secretKey,
             string issuer,
+            string audience,
             int hoursToExpire = 1,
             SecurityTokenDescriptor tokenDescriptor = null)
         {
@@ -27,7 +28,8 @@ namespace SwissKnife
                     SecurityAlgorithms.HmacSha256Signature),
                 Issuer = issuer,
                 IssuedAt = DateTime.UtcNow,
-                NotBefore = DateTime.UtcNow
+                NotBefore = DateTime.UtcNow,
+                Audience = audience
             };
             var token = tokenHandler.CreateToken(_tokenDescriptor);
             return tokenHandler.WriteToken(token);
@@ -38,6 +40,7 @@ namespace SwissKnife
             string token,
             string secretKey,
             string validIssuer,
+            string validAudience,
             bool validateIssuer = true,
             bool validateAudience = false,
             TokenValidationParameters tokenValidationParameters = null
@@ -49,6 +52,7 @@ namespace SwissKnife
                 {
                     ValidIssuer = validIssuer,
                     ValidateIssuer = validateIssuer,
+                    ValidAudience = validAudience,
                     ValidateAudience = validateAudience,
                     IssuerSigningKey =
                          new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
@@ -82,6 +86,7 @@ namespace SwissKnife
             string idToken,
             string secretKey,
             string validIssuer,
+            string validAudience,
             bool validateIssuer = true,
             bool validateAudience = false,
             TokenValidationParameters tokenValidationParameters = null)
@@ -92,6 +97,7 @@ namespace SwissKnife
                 {
                     ValidIssuer = validIssuer,
                     ValidateIssuer = validateIssuer,
+                    ValidAudience = validAudience,
                     ValidateAudience = validateAudience,
                     IssuerSigningKey =
                          new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),

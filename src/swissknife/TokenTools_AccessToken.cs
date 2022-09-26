@@ -3,7 +3,7 @@ using System.Text;
 
 namespace SwissKnife
 {
-    public static partial class TokenTools
+    public partial class TokenTools
     {
         private const string _alg = "HmacSHA256";
         public static string CreateAccessToken(string username, string secretKey, string salt, string ip, string userAgent, int minutesValid = 10)
