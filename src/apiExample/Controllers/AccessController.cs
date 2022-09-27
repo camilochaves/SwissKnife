@@ -34,7 +34,7 @@ public class AccessControl : ControllerBase
         return Ok(new { userIdentity, token });
     }
 
-    //Calls default authorization with is JWTBearer
+    //Calls default authorization which is JWTBearer
     [Authorize]
     [HttpGet]
     [Route("[action]")]
